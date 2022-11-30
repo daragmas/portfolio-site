@@ -1,13 +1,142 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #F4F6FF
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  padding-top: 1rem;
+}
+
+hr {
+  border-top: 15px dotted;
+  border-width: 15px;
+  color: #F3C623;
+  width: 10%;
+}
+
+/*Index*/
+
+.content,
+.portfolio {
+  padding: 2% 15%;
+}
+
+.fa-circle {
+  color: #F4F6FF;
+}
+
+.fab {
+  color: #10375C;
+}
+
+.flip-card {
+  background-color: transparent;
+  border: 3px solid #F3C623;
+  text-align: center;
+  height: 8rem;
+  vertical-align: middle;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #127681;
+  color: #F4F6FF;
+}
+
+.flip-card-back {
+  background-color: #127681;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.footer {
+  background-color: #127681;
+  padding: 2rem;
+}
+
+.intro {
+  padding: 7% 15% 0;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #127681;
+  color: white;
+}
+
+.nav-item {
+  color: white;
+}
+
+.profilepic {
+  border: 7px solid #F3C623;
+  border-radius: 100%;
+  width: 25%;
+}
+
+.skill-heading {
+  padding-top: 2rem;
+}
+
+/*Portfolio*/
+.carousel {
+  background-color: #127681;
+  height: 600px;
+  align-content: center;
+  justify-content: center;
+}
+
+.carousel-heading {
+  text-align: center;
+  color: white;
+}
+
+.carousel-img {
+  display: block;
+  margin: auto;
+  width: 400px;
+  height: auto;
+}
+
+.skill-section-heading {
+  background-color: #127681;
+  color: white;
+  border-bottom: 5px solid #F3C623;
+  margin-top: 3rem;
+}
+
+.skill-details {
+  text-align: center;
+}
+
+/*Contact*/
+
+.contact {
+  padding: 4% 15%;
+}
+
+.contact-header {
+  border-bottom: 5px solid #F3C623;
 }
