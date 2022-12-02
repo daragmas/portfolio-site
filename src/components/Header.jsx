@@ -2,18 +2,25 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 
 const Header = () =>{
-    let activeStyle = {
-        textDecoration: "underline"
+    let titleStyle = {
+        color: "white",
+        fontSize: "1.5rem",
+        margin: "0 20%",
+        textDecoration: "none",
+    }
+
+    let normalStyle = {
+        color: "white",
+        textDecoration: "none",
     }
 
     return(
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div className="container">
+            <div className="container title">
                 <NavLink 
                     to='/'
-                    style={
-                        ({ isActive }) => isActive ? activeStyle : undefined} >
-                            Nate's Site
+                    style={titleStyle} >
+                            Nathaniel Wolf
                 </NavLink>
                 </div>
                 
@@ -22,31 +29,25 @@ const Header = () =>{
                     <li className="nav-item">
                         <NavLink
                             to='/'
-                            style={
-                                ({ isActive }) => isActive ? activeStyle : undefined} >
+                            style={normalStyle} >
                             Home
                         </NavLink>
-                        {/* <a class="nav-link navtext" href="{{ url_for('home') }}">Home</a> */}
                     </li>
                     
                     <li className="nav-item">
                         <NavLink
                             to='/portfolio'
-                            style={
-                                ({ isActive }) => isActive ? activeStyle : undefined} >
+                            style={normalStyle} >
                             Portfolio
                         </NavLink>
-                        {/* <a class="nav-link navtext" href="{{ url_for('portfolio') }}">Portfolio</a> */}
                     </li>
 
                     <li className="nav-item">
                         <NavLink
                             to='/skills'
-                            style={
-                                ({ isActive }) => isActive ? activeStyle : undefined} >
+                            style={normalStyle} >
                             Skills
                         </NavLink>
-                        {/* <a class="nav-link navtext" href="{{ url_for('contact') }}">Contact</a> */}
                     </li>
                     
                     {/* <li className="nav-item">
@@ -56,7 +57,6 @@ const Header = () =>{
                                 ({ isActive }) => isActive ? activeStyle : undefined} >
                             Contact
                         </NavLink>
-                        {/* <a class="nav-link navtext" href="{{ url_for('contact') }}">Contact</a> */}
                     {/*</li> */}
                 </ul>
             </div >

@@ -13,6 +13,7 @@ hr {
   width: 10%;
 }
 
+
 /*Index*/
 
 .content,
@@ -88,6 +89,7 @@ hr {
 
 .nav-item {
   color: white;
+  padding: 3%
 }
 
 .profilepic {
