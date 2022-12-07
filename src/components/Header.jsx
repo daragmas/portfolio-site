@@ -19,7 +19,7 @@ const Header = () =>{
             <div className="container title">
                 <NavLink 
                     to='/'
-                    style={titleStyle} >
+                    style={titleStyle} > 
                             Nathaniel Wolf
                 </NavLink>
                 </div>
