@@ -29,6 +29,14 @@ const Footer = ()=>{
                                     </span>
                                 </a>
                             </li>
+                            <li className="list-inline-item">
+                                <a href="mailto:natepwolf@gmail.com">
+                                    <span className="fa-stack fa-lg">
+                                        <i className="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-envelope fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
                         </ul>
                         <p className="copyright text-center">Copyright &copy; Nate Wolf 2022</p>
                     </div>
