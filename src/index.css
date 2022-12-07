@@ -123,7 +123,7 @@ hr {
   height: auto;
 }
 
-.skill-section-heading {
+.skill-section-heading,  .project-title{
   background-color: #127681;
   color: white;
   border-bottom: 5px solid #F3C623;

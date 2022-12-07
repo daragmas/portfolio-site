@@ -43,23 +43,20 @@ const Portfolio = () => {
 
     return (
         <>
-            <br />
-            <br />
-            <br />
-            <div className='container'>
+            <div className='container-fluid portfolio'>
                 {
-                    projects.map((project) => {
+                    projects.map((project, index) => {
                         return (
-                            <div className="project">
-                                <h3 className="project-title">{project.name}</h3>
+                            <div className="project justify-content-md-center col-12" key={index}>
+                                <h2 className="project-title">{project.name}</h2>
                                 <h4>Languages</h4>
                                 <ul className="project-languages">
-                                    {project.languages.map((language) => <li><p>{language}</p></li>)}
+                                    {project.languages.map((language, i) => <li key={i}><p>{language}</p></li>)}
                                 </ul>
                                 <p>{project.description}</p>
                                 <h4>Links</h4>
                                 <ul>
-                                    {project.links.map((link) => <li><a href={link.href}>{link.site}</a></li>)}
+                                    {project.links.map((link) => <li key={link.site}><a href={link.href}>{link.site}</a></li>)}
                                 </ul>
                                 <hr />
                             </div>
