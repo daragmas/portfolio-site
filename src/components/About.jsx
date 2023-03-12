@@ -18,7 +18,7 @@ const About = ()=>{
                     <div className="row justify-content-center">
                         <div className="col-4">
                             <h3 className="bio">I'm Nate Wolf. </h3>
-                            <h3>I'm a mechanical engineer, a coder, and an amateur plant dad.</h3>
+                            <h3>I'm a coder, former mechanical engineer, and an amateur plant dad.</h3>
                         </div>
                     </div>
                 </div>

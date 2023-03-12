@@ -50,14 +50,11 @@ const Header = () =>{
                         </NavLink>
                     </li>
                     
-                    {/* <li className="nav-item">
-                        <NavLink
-                            to='/contact'
-                            style={
-                                ({ isActive }) => isActive ? activeStyle : undefined} >
-                            Contact
-                        </NavLink>
-                    {/*</li> */}
+                    <li className="nav-item">
+                        <a style={normalStyle} href={require('../assets/Nathaniel_Wolf_Resume.pdf')} download>
+                            Resume
+                        </a>
+                    </li>
                 </ul>
             </div >
         </nav>
